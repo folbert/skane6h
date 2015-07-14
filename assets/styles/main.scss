@@ -1,0 +1,172 @@
+$navbar-border-radius: 0;
+$navbar-inverse-bg: red;
+$navbar-inverse-link-color: #000;
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$scania-yellow: #ffcd50;
+$scania-red: #e03c31;
+
+body {
+  padding-top: 50px;
+}
+
+.navbar-inverse {
+
+  border-bottom: solid 4px $scania-yellow;
+
+  .container {
+
+    @media(min-width: $screen-sm-min) {
+
+      padding-left: 0;
+      padding-right: 0;
+
+    }
+  }
+
+  .navbar-brand {
+
+    &:hover {
+      color: #000;
+    }
+
+  }
+
+  .navbar-toggle {
+
+    border-color: $scania-yellow;
+
+    &:hover {
+      background: $scania-yellow;
+
+      .icon-bar {
+        background-color: $scania-red;
+      }
+
+    }
+
+    .icon-bar {
+      background-color: $scania-yellow;
+    }
+
+  }
+
+  .navbar-collapse {
+    border-top: none;
+  }
+
+  .active {
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.jumbotron {
+  margin-bottom: 24px;
+  background: #fff;
+  background: $scania-yellow url(../images/flag-scania.png) no-repeat center center;
+  background-size: contain;
+  border-bottom: solid 4px $scania-red;
+
+  .container {
+    background: rgba(255,255,255,0.85);
+    padding-bottom: 20px;
+  }
+
+}
+
+.flag {
+  border-top: solid 4px $scania-red;
+  //border-bottom: solid 4px #fedb00;
+  margin-bottom: 28px;
+  margin-top: 28px;
+}
+
+.main-headline {
+
+  span {
+
+    @media (max-width: $screen-xs-max),
+    (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+      display: block;
+
+    }
+
+  }
+
+  &__current {
+    display: block;
+  }
+
+  &__name {
+
+    @media(min-width: $screen-lg-min) {
+
+      &:after {
+        content: " - ";
+      }
+
+      &:before {
+        background: url(../flag-scania.png) no-repeat;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+
+    }
+
+  }
+
+  &__date {
+
+    @media(max-width: $screen-md-min) {
+
+      font-size: 0.7em;
+
+    }
+
+  }
+
+}
+
+.social {
+
+  border-top: solid 4px $scania-red;
+  text-align: center;
+  margin-top: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  .col-xs-12 {
+    min-height: 30px;
+  }
+
+}
+
+.page-footer {
+  border-top: solid 4px $scania-red;
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom:24px;
+  background: $scania-yellow;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
